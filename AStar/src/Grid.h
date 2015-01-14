@@ -12,12 +12,6 @@
 #include <iostream>
 using namespace std;
 
-
-// make sure you do this to work with unordered_set http://stackoverflow.com/questions/17016175/c-unordered-map-using-a-custom-class-type-as-the-key
-
-
-
-
 /* Simple Grid class representing a Grid like 2D Map, In the future versions This cllass will be merged with Map class to which will offer multi dimensional support. 
 * Constructor should initialize num of all the nodes in a grid, initalize directions, moevement type,  
 */
@@ -54,7 +48,7 @@ protected:
 	int m_numOfCols;
 
 	/* possible directions to visit, depends on dimension of the map and movement type.
-	 * TODO: change this to accomidate multi dimensions
+	 * TODO: change this to accommodate multi dimensions
 	 */
 	vector<tuple<int,int>> m_directions; 
 	movementType m_movement;
